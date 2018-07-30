@@ -3,10 +3,10 @@ class Dog
   attr_accessor :name, :breed, :age
   @@all = []
 
-  def initialize(args)
-    @name = args[:name]
-    @breed = args[:breed]
-    @age = args[:age]
+  def initialize(name: nil, breed: nil, age: nil)
+    @name = name
+    @breed = breed
+    @age = age
   end
 
   def self.all
