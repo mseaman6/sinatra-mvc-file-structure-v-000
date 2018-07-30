@@ -4,9 +4,9 @@ class Dog
   @@all = []
 
   def initialize(params={})
-    @name = name
-    @breed = breed
-    @age = age
+    @name = params[:name]
+    @breed = params[:breed]
+    @age = params[:age]
     @@all << self
   end
 
